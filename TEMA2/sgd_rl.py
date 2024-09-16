@@ -98,12 +98,13 @@ for epoch in range(epochs):
     
     plt.pause(0.1)  # Breve pausa para actualizar la visualización
     print(f'Presiona una tecla para continuar con la iteración {epoch + 1}/{epochs}...')
-    #plt.waitforbuttonpress()  # Espera a que el usuario presione una tecla
+    if epoch<10: 
+        plt.waitforbuttonpress()  # Espera a que el usuario presione una tecla
 
 
     # Actualizar parámetros
     w -= learning_rate * dw
-    b -= learning_rate * db
+    b -= 5*learning_rate * db
 
 
 
