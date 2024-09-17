@@ -65,12 +65,13 @@ Denotemos esta solución como $\theta^*(\alpha) = 2 - \frac{\alpha}{2}$.
 
 ### Paso 3: Condición KT de complementariedad
 
-Las condiciones KKT establecen que:
+Las condiciones KT establecen que:
 ```math
 \alpha^* (3 - \theta^*(\alpha^*)) = 0.
 ```
 
 Sustituyendo $\theta^*(\alpha^*) = 2 - \frac{\alpha^*}{2}$ en la restricción:
+
 ```math
 \alpha^* \left[ 3 - \left( 2 - \frac{\alpha^*}{2} \right) \right] = 0.
 ```
@@ -87,16 +88,16 @@ Para que el producto $\alpha^* \left[ 1 + \frac{\alpha^*}{2} \right] = 0$, tenem
 1. $\alpha^* = 0$:
    - Si $\alpha^* = 0$, entonces:
      ```math
-     \theta^* = 2 - \frac{0}{2} = 2.
+     \theta^* = 2 - \frac{0}{2} = 2
      ```
 
 2. $1 + \frac{\alpha^*}{2} = 0$:
    - Esto implica que:
      ```math
-     \frac{\alpha^*}{2} = -1,
+     \frac{\alpha^*}{2} = -1
      ```
      ```math
-     \alpha^* = -2.
+     \alpha^* = -2
      ```
    - **Sin embargo, esto viola la condición $\alpha \geq 0$**, lo que significa que este caso no es válido.
 
@@ -104,12 +105,12 @@ Para que el producto $\alpha^* \left[ 1 + \frac{\alpha^*}{2} \right] = 0$, tenem
 
 La única solución válida es:
 ```math
-\alpha^* = 0 \quad \text{y} \quad \theta^* = 2.
+\alpha^* = 0 \quad \text{y} \quad \theta^* = 2
 ```
 
 Verificamos la restricción:
 ```math
-3 - \theta^* = 3 - 2 = 1 \geq 0,
+3 - \theta^* = 3 - 2 = 1 \geq 0
 ```
 lo que confirma que la solución cumple con la restricción.
 
