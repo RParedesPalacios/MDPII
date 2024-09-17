@@ -12,9 +12,9 @@ sujeto a la restricción:
 
 o lo que es lo mismo:
 
-\[
+```math
 3 - \theta \geq 0
-\]
+```
 
 ### Solución si Teorema KT
 
