@@ -67,18 +67,18 @@ Denotemos esta solución como $\theta^*(\alpha) = 2 - \frac{\alpha}{2}$.
 
 Las condiciones KT establecen que:
 ```math
-\alpha^* (3 - \theta^*(\alpha^*)) = 0.
+\alpha^* (3 - \theta^*(\alpha^*)) = 0
 ```
 
 Sustituyendo $\theta^*(\alpha^*) = 2 - \frac{\alpha^*}{2}$ en la restricción:
 
 ```math
-\alpha^* \left[ 3 - \left( 2 - \frac{\alpha^*}{2} \right) \right] = 0.
+\alpha^* \left[ 3 - \left( 2 - \frac{\alpha^*}{2} \right) \right] = 0
 ```
 
 Simplificamos la expresión dentro del paréntesis:
 ```math
-\alpha^* \left[ 1 + \frac{\alpha^*}{2} \right] = 0.
+\alpha^* \left[ 1 + \frac{\alpha^*}{2} \right] = 0
 ```
 
 ### Paso 4: Resolver las condiciones KT
