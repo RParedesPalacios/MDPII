@@ -32,15 +32,15 @@ Aún así nos podríamos haber evitado mucho desarrollo matemático empleando el
 
 ### Paso 1: Formulación del Lagrangiano
 
-La Lagrangiana para este problema, usando el multiplicador de Lagrange \(\alpha\) asociado a la restricción, es:
+La Lagrangiana para este problema, usando el multiplicador de Lagrange $\alpha$ asociado a la restricción, es:
 ```math
 \mathcal{L}(\theta, \alpha) = 1 + (\theta - 2)^2 - \alpha (3 - \theta),
 ```
-donde \(\alpha \geq 0\).
+donde $\alpha \geq 0$.
 
-### Paso 2: Derivar el Lagrangiano con respecto a \(\theta\) e igualar a cero
+### Paso 2: Derivar el Lagrangiano con respecto a $\theta$ e igualar a cero
 
-Derivamos la Lagrangiana con respecto a \(\theta\):
+Derivamos la Lagrangiana con respecto a $\theta$:
 ```math
 \frac{\partial \mathcal{L}}{\partial \theta} = 2(\theta - 2) + \alpha.
 ```
@@ -50,7 +50,7 @@ Igualamos a cero para encontrar los puntos críticos:
 2(\theta - 2) + \alpha = 0.
 ```
 
-Despejamos \(\theta\) en términos de \(\alpha\):
+Despejamos $\theta$ en términos de $\alpha$:
 ```math
 2\theta - 4 + \alpha = 0,
 ```
@@ -61,7 +61,7 @@ Despejamos \(\theta\) en términos de \(\alpha\):
 \theta = 2 - \frac{\alpha}{2}.
 ```
 
-Denotemos esta solución como \(\theta^*(\alpha) = 2 - \frac{\alpha}{2}\).
+Denotemos esta solución como $\theta^*(\alpha) = 2 - \frac{\alpha}{2}$.
 
 ### Paso 3: Condición KT de complementariedad
 
@@ -70,7 +70,7 @@ Las condiciones KKT establecen que:
 \alpha^* (3 - \theta^*(\alpha^*)) = 0.
 ```
 
-Sustituyendo \(\theta^*(\alpha^*) = 2 - \frac{\alpha^*}{2}\) en la restricción:
+Sustituyendo $\theta^*(\alpha^*) = 2 - \frac{\alpha^*}{2}$ en la restricción:
 ```math
 \alpha^* \left[ 3 - \left( 2 - \frac{\alpha^*}{2} \right) \right] = 0.
 ```
@@ -82,15 +82,15 @@ Simplificamos la expresión dentro del paréntesis:
 
 ### Paso 4: Resolver las condiciones KT
 
-Para que el producto \(\alpha^* \left[ 1 + \frac{\alpha^*}{2} \right] = 0\), tenemos dos casos posibles:
+Para que el producto $\alpha^* \left[ 1 + \frac{\alpha^*}{2} \right] = 0$, tenemos dos casos posibles:
 
-1. \(\alpha^* = 0\):
-   - Si \(\alpha^* = 0\), entonces:
+1. $\alpha^* = 0$:
+   - Si $\alpha^* = 0$, entonces:
      ```math
      \theta^* = 2 - \frac{0}{2} = 2.
      ```
 
-2. \(1 + \frac{\alpha^*}{2} = 0\):
+2. $1 + \frac{\alpha^*}{2} = 0$:
    - Esto implica que:
      ```math
      \frac{\alpha^*}{2} = -1,
@@ -98,7 +98,7 @@ Para que el producto \(\alpha^* \left[ 1 + \frac{\alpha^*}{2} \right] = 0\), ten
      ```math
      \alpha^* = -2.
      ```
-   - **Sin embargo, esto viola la condición \(\alpha \geq 0\)**, lo que significa que este caso no es válido.
+   - **Sin embargo, esto viola la condición $\alpha \geq 0$**, lo que significa que este caso no es válido.
 
 ### Paso 5: Conclusión
 
