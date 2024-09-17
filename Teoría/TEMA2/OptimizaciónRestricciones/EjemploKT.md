@@ -70,7 +70,7 @@ Las condiciones KT establecen que:
 \alpha^* (3 - \theta^*(\alpha^*)) = 0
 ```
 
-Sustituyendo $\theta^*(\alpha^*) = 2 - \frac{\alpha^*}{2}$ en la restricción:
+Sustituyendo $\theta^*(\alpha) = 2 - \frac{\alpha}{2}$ en la restricción:
 
 ```math
 \alpha^* \left[ 3 - \left( 2 - \frac{\alpha^*}{2} \right) \right] = 0
@@ -86,20 +86,20 @@ Simplificamos la expresión dentro del paréntesis:
 Para que el producto $\alpha^* \left[ 1 + \frac{\alpha^*}{2} \right] = 0$, tenemos dos casos posibles:
 
 1. $\alpha^* = 0$:
-   - Si $\alpha^* = 0$, entonces:
-     ```math
-     \theta^* = 2 - \frac{0}{2} = 2
-     ```
+  
+ ```math
+\theta^* = 2 - \frac{0}{2} = 2
+```
 
 2. $1 + \frac{\alpha^*}{2} = 0$:
-   - Esto implica que:
-     ```math
-     \frac{\alpha^*}{2} = -1
-     ```
-     ```math
-     \alpha^* = -2
-     ```
-   - **Sin embargo, esto viola la condición $\alpha \geq 0$**, lo que significa que este caso no es válido.
+
+```math
+\frac{\alpha^*}{2} = -1
+```
+```math
+\alpha^* = -2
+```
+**Sin embargo, esto viola la condición $\alpha \geq 0$**, lo que significa que este caso no es válido.
 
 ### Paso 5: Conclusión
 
