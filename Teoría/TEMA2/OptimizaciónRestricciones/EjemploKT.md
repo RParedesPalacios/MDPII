@@ -16,9 +16,9 @@ o lo que es lo mismo:
 3 - \theta \geq 0
 ```
 
-### Solución si Teorema KT
+### Solución sin Teorema KT
 
-La solución sin el teoremas KKT desarrollada en clase nos lleva a un $\alpha=-1$ que viola la condición de que $\alpha\geq 0$.
+La solución sin el teoremas KT desarrollada en clase nos lleva a un $\alpha=-1$ que viola la condición de que $\alpha\geq 0$.
 
 El hecho de que el multiplicador $\alpha$ sea negativo implica que la restricción $3 - \theta \geq 0$ no está limitando el óptimo en este caso. 
 
