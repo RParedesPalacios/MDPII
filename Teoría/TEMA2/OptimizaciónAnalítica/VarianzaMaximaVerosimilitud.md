@@ -5,7 +5,7 @@ Necesitamos estimar los parámetros de la distribución gaussiana: la media $\mu
 
 ## Paso 1: Definir la Función de Verosimilitud
 
-Supongamos que tenemos un conjunto de datos $\{x_1, x_2, \dots, x_n\right\}$ que proviene de una distribución normal con media $\mu$ y varianza $\sigma^2$. La función de densidad de probabilidad de una distribución normal univariada es:
+Supongamos que tenemos un conjunto de datos $\left {x_1, x_2, \dots, x_n\right }$ que proviene de una distribución normal con media $\mu$ y varianza $\sigma^2$. La función de densidad de probabilidad de una distribución normal univariada es:
 
 $f(x; \mu, \sigma^2) = \frac{1}{\sqrt{2\pi \sigma^2}} \exp\left(-\frac{(x - \mu)^2}{2\sigma^2}\right)$
 
