@@ -1,6 +1,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+"""
+Ejemplo de implementación del algoritmo del perceptrón para un problema de clasificación binaria.
+Asignatura MDP II
+Demo visual. El algoritmo en sí mismo es mucho más simple.
+"""
+
 def perceptron(S, learning_rate=0.1, max_iterations=100):
 
     # Initialize theta arbitrarily, add one extra dimension for the bias
