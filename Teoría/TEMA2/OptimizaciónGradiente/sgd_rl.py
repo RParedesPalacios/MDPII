@@ -1,5 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
+"""
+Ejemplo de implementación del algoritmo del Widrow-Hoff (Adaline)
+Asignatura MDP II
+Demo visual. El algoritmo en sí mismo es mucho más simple.
+"""
 
 # Datos de entrenamiento inventados
 np.random.seed(10)  # Para reproducibilidad
