@@ -8,7 +8,7 @@ Necesitamos estimar los parámetros de la distribución gaussiana: la media $\mu
 Supongamos que tenemos un conjunto de datos $ \{x_1, x_2, \dots, x_n\} $ que proviene de una distribución normal con media $\mu$ y varianza $\sigma^2$. La función de densidad de probabilidad de una distribución normal univariada es:
 
 $
-f(x; \mu, \sigma^2) = \frac{1}{\sqrt{2\pi \sigma^2}} \exp\left(-\frac{(x - \mu)^2}{2\sigma^2}\right).
+f(x; \mu, \sigma^2) = \frac{1}{\sqrt{2\pi \sigma^2}} \exp\left(-\frac{(x - \mu)^2}{2\sigma^2}\right)
 $
 
 La función de verosimilitud $L(\mu, \sigma^2)$ para el conjunto de datos $ \{x_1, x_2, \dots, x_n\} $ es el producto de las densidades para todas las observaciones:
