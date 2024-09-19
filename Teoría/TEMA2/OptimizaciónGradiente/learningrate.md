@@ -95,7 +95,7 @@ Los valores propios de esta matriz son $2$ y $20$.
 
 La condición $\rho < \frac{2}{\lambda_{\max}}$ es una regla que garantiza la convergencia de desecenso por gradiente, donde $\lambda_{\max}$ es el valor propio máximo de la matriz Hessiana. 
 
-En este caso, $\lambda_{\max} = 20$. Por lo tanto, para garantizar la convergencia del método de gradiente descendente, el paso $\rho$ debe satisfacer:
+En este caso, $\lambda_{\max} = 20$. Por lo tanto, para garantizar la convergencia del método de descenso por gradiente, el paso $\rho$ debe satisfacer:
 
 ```math
 \rho < \frac{2}{\lambda_{\max}} = \frac{2}{20} = 0.1.
