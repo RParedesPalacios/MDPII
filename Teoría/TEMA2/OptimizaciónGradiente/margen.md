@@ -10,7 +10,7 @@ el margen está relacionado directamente con el módulo de los parámetros $w$. 
 
 ### Definición del margen en un clasificador lineal
 
-Dado un conjunto de datos de entrenamiento $\{(x_i, y_i)\}_{i=1}^{N}$, donde $x_i$ es una muestra y $y_i \in \left\{-1, 1\right\}$ es su etiqueta, el margen de clasificación es la distancia mínima entre las muestras y la frontera de decisión del clasificador, definida por $w^T x = 0$.
+Dado un conjunto de datos de entrenamiento $\{(x_i, y_i)\}_{i=1}^{N}$, donde $x_i$ es una muestra y $y_i \in$```{-1, 1}``` es su etiqueta, el margen de clasificación es la distancia mínima entre las muestras y la frontera de decisión del clasificador, definida por $w^T x = 0$.
 
 Para una muestra $(x_i, y_i)$ correctamente clasificada, el valor de la función de decisión debe cumplir:
 
