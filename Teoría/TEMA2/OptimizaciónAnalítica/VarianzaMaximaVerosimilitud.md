@@ -101,7 +101,7 @@ Juntando los resultados de las dos derivadas, obtenemos:
 ```
 
 
-## Resolver
+## Paso 4: Resolver
 
 Igualando a cero para encontrar el estimador de $\sigma^2$:
 
