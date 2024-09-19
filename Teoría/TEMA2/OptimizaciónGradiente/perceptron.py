@@ -10,7 +10,7 @@ Demo visual. El algoritmo en sí mismo es mucho más simple.
 def perceptron(S, learning_rate=0.1, max_iterations=100):
 
     # Initialize theta arbitrarily, add one extra dimension for the bias
-    np.random.seed(0)
+    np.random.seed(10)
     theta = np.random.rand(S[0][0].shape[0])  # Random initialization
 
     # Set up the plot
