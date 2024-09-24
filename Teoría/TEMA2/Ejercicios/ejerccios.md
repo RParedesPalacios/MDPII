@@ -125,9 +125,17 @@ $$
 
 tenemos los siguientes puntos:
 
-- \( \mathbf{x_1} = \begin{bmatrix} 1 \\ 1 \end{bmatrix} \), \( y_1 = 1 \)
-- \( \mathbf{x_2} = \begin{bmatrix} 2 \\ 1 \end{bmatrix} \), \( y_2 = 1 \)
-- \( \mathbf{x_3} = \begin{bmatrix} 4 \\ 1 \end{bmatrix} \), \( y_3 = 2 \)
+$$
+\mathbf{x_1} = \begin{bmatrix} 1 \\ 1 \end{bmatrix}, y_1 = 1 
+$$
+
+$$
+\mathbf{x_2} = \begin{bmatrix} 2 \\ 1 \end{bmatrix}, y_2 = 1 
+$$
+
+$$
+\mathbf{x_3} = \begin{bmatrix} 4 \\ 1 \end{bmatrix}, y_3 = 2
+$$
 
 #### Función de Pérdida
 
@@ -169,15 +177,15 @@ $$
 
 2. **Para \( i=2 \)**:
 
-   $$
-   y_2 - \mathbf{w}^T \mathbf{x_2} = 1 - (0 \cdot 2 + 0 \cdot 1) = 1
-   $$
+$$
+y_2 - \mathbf{w}^T \mathbf{x_2} = 1 - (0 \cdot 2 + 0 \cdot 1) = 1
+$$
 
 3. **Para \( i=3 \)**:
 
-   $$
-   y_3 - \mathbf{w}^T \mathbf{x_3} = 2 - (0 \cdot 4 + 0 \cdot 1) = 2
-   $$
+$$
+y_3 - \mathbf{w}^T \mathbf{x_3} = 2 - (0 \cdot 4 + 0 \cdot 1) = 2
+$$
 
 Sustituyendo en el gradiente:
 
