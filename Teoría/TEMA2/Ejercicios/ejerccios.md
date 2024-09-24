@@ -78,9 +78,9 @@ Teorema KT, sustituimos en la expresión $\alpha v(\theta)$los valores optimos d
 \alpha(\alpha-1)=0 \rightarrow {\alpha=0~~~~ ó~~~~ \alpha=1}
 ```
 
-La primera solución $\alpha=0$viola la condición que $\theta_1+\theta_2\geq 1$dado que llevaría a $\theta_1=0$y $\theta_2=0$por lo tanto la descartamos. 
+La primera solución $\alpha=0$ viola la condición que $\theta_1+\theta_2\geq 1$ dado que llevaría a $\theta_1=0$ y $\theta_2=0$ por lo tanto la descartamos. 
 
-La segunda solución sería correcta dado que llevaría a $\theta_1=\frac{1}{2}$y $\theta_2=\frac{1}{2}$que sí cumplen con la restricción.
+La segunda solución sería correcta dado que llevaría a $\theta_1=\frac{1}{2}$ y $\theta_2=\frac{1}{2}$ que sí cumplen con la restricción.
 
 
 
