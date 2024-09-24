@@ -12,9 +12,9 @@ Vamos a simplificarla:
 f(\theta) = -(1 - \theta^2) - (2 + \theta) = -1 + \theta^2 - 2 - \theta = \theta^2 - \theta - 3
 ```
 
-Ahora que tenemos la función simplificada $ f(\theta) = \theta^2 - \theta - 3 $, podemos encontrar su mínimo derivando la función y resolviendo $ f'(\theta) = 0 $.
+Ahora que tenemos la función simplificada $f(\theta) = \theta^2 - \theta - 3$, podemos encontrar su mínimo derivando la función y resolviendo $f'(\theta) = 0$.
 
-#### Derivada de $ f(\theta) $
+#### Derivada de $f(\theta)$
 
 ```math
 f'(\theta) = \frac{d}{d\theta}(\theta^2 - \theta - 3) = 2\theta - 1
@@ -32,17 +32,17 @@ Igualamos la derivada a cero para encontrar los puntos críticos:
 ```
 
 #### **Extra** Comprobar que es un mínimo
-Calculamos la segunda derivada de $ f(\theta) $ para determinar si este punto es un máximo o mínimo:
+Calculamos la segunda derivada de $f(\theta)$para determinar si este punto es un máximo o mínimo:
 
 ```math
 f''(\theta) = \frac{d}{d\theta}(2\theta - 1) = 2
 ```
 
-Dado que la segunda derivada es positiva ($ f''(\theta) = 2 $), esto indica que la función tiene un **mínimo** en $\theta = \frac{1}{2}$.
+Dado que la segunda derivada es positiva ($f''(\theta) = 2$), esto indica que la función tiene un **mínimo** en $\theta = \frac{1}{2}$.
 
 ## Ejercicio 2. Optimización con restricciones
 
-Sea $f(\theta_1,\theta_2)=\theta_1^2+\theta_2^2$ se pide encontrar el mínimo para $\theta_1+\theta_2\geq 1$
+Sea $f(\theta_1,\theta_2)=\theta_1^2+\theta_2^2$se pide encontrar el mínimo para $\theta_1+\theta_2\geq 1$
 
 
 ![Gráfico de la función q](q.png)
@@ -54,7 +54,7 @@ Obtenemos el lagrangiano:
 \mathcal{L}(\theta_1, \theta_2, \alpha) = \theta_1^2 + \theta_2^2 - \alpha(\theta_1 + \theta_2 -1)
 ```
 
-Derivamos con respecto a $\theta_1,\theta_2$ e igualamos a cero:
+Derivamos con respecto a $\theta_1,\theta_2$e igualamos a cero:
 
 ```math
 \frac{\partial \mathcal{L}}{\partial \theta_1} = 2\theta_1 - \alpha = 0; ~~~~~~\theta_1=\frac{\alpha}{2}
@@ -64,7 +64,7 @@ Derivamos con respecto a $\theta_1,\theta_2$ e igualamos a cero:
 \frac{\partial \mathcal{L}}{\partial \theta_2} = 2\theta_2 - \alpha = 0 ;~~~~~~ \theta_2=\frac{\alpha}{2}
 ```
 
-Teorema KT, sustituimos en la expresión $\alpha v(\theta)$ los valores optimos de $\theta$:
+Teorema KT, sustituimos en la expresión $\alpha v(\theta)$los valores optimos de $\theta$:
 
 ```math
 \alpha v(\theta_1,\theta_2)=0
@@ -78,9 +78,9 @@ Teorema KT, sustituimos en la expresión $\alpha v(\theta)$ los valores optimos 
 \alpha(\alpha-1)=0 \rightarrow {\alpha=0~~~~ ó~~~~ \alpha=1}
 ```
 
-La primera solución $\alpha=0$ viola la condición que $\theta_1+\theta_2\geq 1$ dado que llevaría a $\theta_1=0$ y $\theta_2=0$ por lo tanto la descartamos. 
+La primera solución $\alpha=0$viola la condición que $\theta_1+\theta_2\geq 1$dado que llevaría a $\theta_1=0$y $\theta_2=0$por lo tanto la descartamos. 
 
-La segunda solución sería correcta dado que llevaría a $\theta_1=\frac{1}{2}$ y $\theta_2=\frac{1}{2}$ que sí cumplen con la restricción.
+La segunda solución sería correcta dado que llevaría a $\theta_1=\frac{1}{2}$y $\theta_2=\frac{1}{2}$que sí cumplen con la restricción.
 
 
 
@@ -162,16 +162,19 @@ $$
 Calculamos cada término:
 
 1. **Para \( i=1 \)**:
+
    $$
    y_1 - \mathbf{w}^T \mathbf{x_1} = 1 - (0 \cdot 1 + 0 \cdot 1) = 1
    $$
 
 2. **Para \( i=2 \)**:
+
    $$
    y_2 - \mathbf{w}^T \mathbf{x_2} = 1 - (0 \cdot 2 + 0 \cdot 1) = 1
    $$
 
 3. **Para \( i=3 \)**:
+
    $$
    y_3 - \mathbf{w}^T \mathbf{x_3} = 2 - (0 \cdot 4 + 0 \cdot 1) = 2
    $$
