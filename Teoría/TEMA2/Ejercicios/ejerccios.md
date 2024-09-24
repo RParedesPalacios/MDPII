@@ -1,6 +1,6 @@
 ## Ejercicio 1. Solución analítica
 
-Encuentra el mínimo de $ f(\theta) = -(1 - \theta^2) - (2 + \theta) $. 
+Encuentra el mínimo de $f(\theta) = -(1 - \theta^2) - (2 + \theta)$. 
 
 ![Gráfico de la función q](funcion.png)
 
