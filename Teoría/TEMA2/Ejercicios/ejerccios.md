@@ -88,7 +88,7 @@ La segunda solución sería correcta dado que llevaría a $\theta_1=\frac{1}{2}$
 
 ## Ejercicio 3
 
-Sea una regresión lineal $y=wx+b$, donde $x,y\in\R^1$. Tenemos las siguientes muestras de entrenamiento $S=\{(x_1,y_1)\ldots(x_n,y_n)\}$:
+Sea una regresión lineal $y=wx+b$, donde $x,y\in R^1$. Tenemos las siguientes muestras de entrenamiento $S=\{(x_1,y_1)\ldots(x_n,y_n)\}$:
 
 $S=\{(1,1),(2,1),(4,2)\}$
 
