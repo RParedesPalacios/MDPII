@@ -32,7 +32,7 @@ Igualamos la derivada a cero para encontrar los puntos críticos:
 ```
 
 #### **Extra** Comprobar que es un mínimo
-Calculamos la segunda derivada de $f(\theta)$para determinar si este punto es un máximo o mínimo:
+Calculamos la segunda derivada de $f(\theta)$ para determinar si este punto es un máximo o mínimo:
 
 ```math
 f''(\theta) = \frac{d}{d\theta}(2\theta - 1) = 2
@@ -163,9 +163,9 @@ Calculamos cada término:
 
 1. **Para \( i=1 \)**:
 
-   $$
-   y_1 - \mathbf{w}^T \mathbf{x_1} = 1 - (0 \cdot 1 + 0 \cdot 1) = 1
-   $$
+$$
+y_1 - \mathbf{w}^T \mathbf{x_1} = 1 - (0 \cdot 1 + 0 \cdot 1) = 1
+$$
 
 2. **Para \( i=2 \)**:
 
