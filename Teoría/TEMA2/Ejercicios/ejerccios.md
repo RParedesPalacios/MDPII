@@ -107,97 +107,97 @@ Se pide realizar una primera iteración de descenso por gradiente.
 
 Dada la regresión lineal:
 
-$$
+```math
 y = \mathbf{w}^T \mathbf{x}
-$$
+```
 
 donde \( \mathbf{w} \) incluye tanto el peso como el sesgo, y \( \mathbf{x} \) es un vector que incluye el valor de \( x \) y una constante 1:
 
-$$
+```math
 \mathbf{w} = \begin{bmatrix} w \\ b \end{bmatrix}, \quad \mathbf{x_i} = \begin{bmatrix} x_i \\ 1 \end{bmatrix}
-$$
+```
 
 Para el conjunto de entrenamiento:
 
-$$
+```math
 S = \{(1,1), (2,1), (4,2)\}
-$$
+```
 
 tenemos los siguientes puntos:
 
-$$
+```math
 \mathbf{x_1} = \begin{bmatrix} 1 \\ 1 \end{bmatrix}, y_1 = 1 
-$$
+```
 
-$$
+```math
 \mathbf{x_2} = \begin{bmatrix} 2 \\ 1 \end{bmatrix}, y_2 = 1 
-$$
+```
 
-$$
+```math
 \mathbf{x_3} = \begin{bmatrix} 4 \\ 1 \end{bmatrix}, y_3 = 2
-$$
+```
 
 #### Función de Pérdida
 
 La función de pérdida se define como:
 
-$$
+```math
 J(\mathbf{w}) = \sum_{i=1}^n (y_i - \mathbf{w}^T \mathbf{x_i})^2
-$$
+```
 
 Sustituyendo los puntos del conjunto \( S \):
 
-$$
+```math
 J(\mathbf{w}) = (1 - \mathbf{w}^T \mathbf{x_1})^2 + (1 - \mathbf{w}^T \mathbf{x_2})^2 + (2 - \mathbf{w}^T \mathbf{x_3})^2
-$$
+```
 
 #### Inicialización
 
 Inicializamos los parámetros:
 
-$$
+```math
 \mathbf{w} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}
-$$
+```
 
 #### Gradiente de la Función de Pérdida
 
 Para calcular el gradiente, utilizamos:
 
-$$
+```math
 \frac{\partial J}{\partial \mathbf{w}} = -2 \sum_{i=1}^n (y_i - \mathbf{w}^T \mathbf{x_i}) \mathbf{x_i}
-$$
+```
 
 Calculamos cada término:
 
 1. **Para \( i=1 \)**:
 
-$$
+```math
 y_1 - \mathbf{w}^T \mathbf{x_1} = 1 - (0 \cdot 1 + 0 \cdot 1) = 1
-$$
+```
 
 2. **Para \( i=2 \)**:
 
-$$
+```math
 y_2 - \mathbf{w}^T \mathbf{x_2} = 1 - (0 \cdot 2 + 0 \cdot 1) = 1
-$$
+```
 
 3. **Para \( i=3 \)**:
 
-$$
+```math
 y_3 - \mathbf{w}^T \mathbf{x_3} = 2 - (0 \cdot 4 + 0 \cdot 1) = 2
-$$
+```
 
 Sustituyendo en el gradiente:
 
-$$
+```math
 \frac{\partial J}{\partial \mathbf{w}} = -2 \left( 1 \begin{bmatrix} 1 \\ 1 \end{bmatrix} + 1 \begin{bmatrix} 2 \\ 1 \end{bmatrix} + 2 \begin{bmatrix} 4 \\ 1 \end{bmatrix} \right)
-$$
+```
 
 Calculando el sumatorio:
 
-$$
+```math
 -2 \begin{bmatrix} 11 \\ 4 \end{bmatrix} = \begin{bmatrix} -22 \\ -8 \end{bmatrix}
-$$
+```
 
 #### Actualización de Parámetros
 
@@ -217,9 +217,9 @@ Asumiendo $\alpha = 0.01$ :
 
 Después de la primera iteración de descenso por gradiente, los nuevos parámetros son:
 
-$$
+```math
 \mathbf{w}_{t+1} = \begin{bmatrix} 0.22 \\ 0.08 \end{bmatrix}
-$$
+```
 
 ## Ejercicio 4
 
