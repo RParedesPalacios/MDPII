@@ -54,7 +54,7 @@ Obtenemos el lagrangiano:
 \mathcal{L}(\theta_1, \theta_2, \alpha) = \theta_1^2 + \theta_2^2 - \alpha(\theta_1 + \theta_2 -1)
 ```
 
-Derivamos con respecto a $\theta_1,\theta_2$e igualamos a cero:
+Derivamos con respecto a $\theta_1,\theta_2$ e igualamos a cero:
 
 ```math
 \frac{\partial \mathcal{L}}{\partial \theta_1} = 2\theta_1 - \alpha = 0; ~~~~~~\theta_1=\frac{\alpha}{2}
@@ -64,7 +64,7 @@ Derivamos con respecto a $\theta_1,\theta_2$e igualamos a cero:
 \frac{\partial \mathcal{L}}{\partial \theta_2} = 2\theta_2 - \alpha = 0 ;~~~~~~ \theta_2=\frac{\alpha}{2}
 ```
 
-Teorema KT, sustituimos en la expresión $\alpha v(\theta)$los valores optimos de $\theta$:
+Teorema KT, sustituimos en la expresión $\alpha v(\theta)$ los valores optimos de $\theta$:
 
 ```math
 \alpha v(\theta_1,\theta_2)=0
@@ -111,7 +111,7 @@ Dada la regresión lineal:
 y = \mathbf{w}^T \mathbf{x}
 ```
 
-donde \( \mathbf{w} \) incluye tanto el peso como el sesgo, y \( \mathbf{x} \) es un vector que incluye el valor de \( x \) y una constante 1:
+donde $\mathbf{w}$ incluye tanto el peso como el sesgo, y $\mathbf{x}$ es un vector que incluye el valor de $x$ y una constante 1:
 
 ```math
 \mathbf{w} = \begin{bmatrix} w \\ b \end{bmatrix}, \quad \mathbf{x_i} = \begin{bmatrix} x_i \\ 1 \end{bmatrix}
