@@ -203,9 +203,9 @@ $$
 
 Con una tasa de aprendizaje $\alpha$ :
 
-$$
+```math
 \mathbf{w}_{t+1} = \mathbf{w}_{t} - \alpha \frac{\partial J}{\partial \mathbf{w}}
-$$
+```
 
 Asumiendo $\alpha = 0.01$ :
 
