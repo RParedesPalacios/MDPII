@@ -209,9 +209,9 @@ Con una tasa de aprendizaje $\alpha$ :
 
 Asumiendo $\alpha = 0.01$ :
 
-$$
+```math
 \mathbf{w}_{t+1} = \begin{bmatrix} 0 \\ 0 \end{bmatrix} - 0.01 \begin{bmatrix} -22 \\ -8 \end{bmatrix} = \begin{bmatrix} 0.22 \\ 0.08 \end{bmatrix}
-$$
+```
 
 #### Resultado Final
 
