@@ -42,7 +42,7 @@ Dado que la segunda derivada es positiva ($f''(\theta) = 2$), esto indica que la
 
 ## Ejercicio 2. Optimización con restricciones
 
-Sea $f(\theta_1,\theta_2)=\theta_1^2+\theta_2^2$se pide encontrar el mínimo para $\theta_1+\theta_2\geq 1$
+Sea $f(\theta_1,\theta_2)=\theta_1^2+\theta_2^2$ se pide encontrar el mínimo para $\theta_1+\theta_2\geq 1$
 
 
 ![Gráfico de la función q](q.png)
