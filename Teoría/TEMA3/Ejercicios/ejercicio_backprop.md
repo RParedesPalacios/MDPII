@@ -20,7 +20,7 @@ J(\mathbf{W}) = \frac{1}{2} \| \hat{\mathbf{y}} - \mathbf{y} \|^2
 - **Pesos de la capa 1**:
 
 ```math
-W^{1}= \begin{pmatrix} 2 & 0 & 1 \\ 0 & -1 & 1 \end{pmatrix}
+W^{~1}= \begin{pmatrix} 2 & 0 & 1 \\ 0 & -1 & 1 \end{pmatrix}
 ```
 
 - **Pesos de la capa 2**:
