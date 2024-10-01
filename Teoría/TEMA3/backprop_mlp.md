@@ -66,7 +66,7 @@ Para la capa de salida $L$, la derivada del coste con respecto a las activacione
 
 Donde:
 - $f'(\mathbf{z}^{(L)})$ es la derivada de la función de activación.
-- La operación $\odot$ es el producto elemento a elemento, recordemos que los operandos son vectores
+- La operación $\odot$ es el producto elemento a elemento (producto de Hadamard), recordemos que los operandos son vectores
 
 Los gradientes de los pesos $\mathbf{W}^{(L)}$ son:
 
