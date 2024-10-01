@@ -15,28 +15,28 @@ J(\mathbf{W}) = \frac{1}{2} \| \hat{\mathbf{y}} - \mathbf{y} \|^2
  Se utilizan los siguientes valores:
 
 ### Valores:
-- **Entrada**: $\mathbf{x} = [-1, 0, 2]$
-- **Salida esperada**: $\mathbf{y} = [3]$
-- **Pesos de la capa 1**:
+**Entrada**: $\mathbf{x} = [-1, 0, 2]$
+**Salida esperada**: $\mathbf{y} = [3]$
+**Pesos de la capa 1**:
 
-  ```math
-  W^1= \begin{pmatrix} 2 & 0 & 1 \\ 0 & -1 & 1 \end{pmatrix}
-  ```
+```math
+W^1= \begin{pmatrix} 2 & 0 & 1 \\ 0 & -1 & 1 \end{pmatrix}
+```
 
-- **Pesos de la capa 2**:
+**Pesos de la capa 2**:
 
-  ```math
-  W^2 = \begin{pmatrix} -1 \\ 1 \end{pmatrix}
-  ```
+```math
+W^2 = \begin{pmatrix} -1 \\ 1 \end{pmatrix}
+```
 
 ### Funciones de activación:
-- **ReLU para la capa oculta**:
+**ReLU para la capa oculta**:
 
-  ```math
-  f(z) = \max(0, z)
-  ```
+```math
+f(z) = \max(0, z)
+```
 
-- **Función lineal para la capa de salida** (sin función de activación, simplemente $f(z) = z$).
+**Función lineal para la capa de salida** (sin función de activación, simplemente $f(z) = z$).
 
 ---
 
@@ -83,9 +83,9 @@ a^2 = z^2 = 2
 
 El gradiente de los pesos de la capa de salida $W^2$ es:
 
-\[
+```math
 \text{gradiente de } W^2 = a^1 \cdot \delta^{2} = \begin{pmatrix} 0 \\ 2 \end{pmatrix} \cdot (-1) = \begin{pmatrix} 0 \\ -2 \end{pmatrix}
-\]
+```
 
 #### Cálculo del gradiente en la capa oculta:
 
