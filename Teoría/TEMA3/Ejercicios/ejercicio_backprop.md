@@ -83,9 +83,9 @@ a^2 = z^2 = 2
 
 El gradiente de los pesos de la capa de salida $W^2$ es:
 
-```math
+\[
 \text{gradiente de } W^2 = a^1 \cdot \delta^{2} = \begin{pmatrix} 0 \\ 2 \end{pmatrix} \cdot (-1) = \begin{pmatrix} 0 \\ -2 \end{pmatrix}
-```
+\]
 
 #### Cálculo del gradiente en la capa oculta:
 
