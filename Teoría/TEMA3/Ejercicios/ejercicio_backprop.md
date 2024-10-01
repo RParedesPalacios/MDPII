@@ -26,7 +26,7 @@ W^{~1}= \begin{pmatrix} 2 & 0 & 1 \\ 0 & -1 & 1 \end{pmatrix}
 - **Pesos de la capa 2**:
 
 ```math
-W^2 = \begin{pmatrix} -1 \\ 1 \end{pmatrix}
+W^{~2} = \begin{pmatrix} -1 \\ 1 \end{pmatrix}
 ```
 
 ### Funciones de activación:
@@ -45,7 +45,7 @@ f(z) = \max(0, z)
 #### Cálculo de las activaciones en la capa oculta:
 
 ```math
-z^1 = W^1 \cdot x = \begin{pmatrix} 2 & 0 & 1 \\ 0 & -1 & 1 \end{pmatrix} \cdot \begin{pmatrix} -1 \\ 0 \\ 2 \end{pmatrix} = \begin{pmatrix} 0 \\ 2 \end{pmatrix}
+z^1 = W^{~1} \cdot x = \begin{pmatrix} 2 & 0 & 1 \\ 0 & -1 & 1 \end{pmatrix} \cdot \begin{pmatrix} -1 \\ 0 \\ 2 \end{pmatrix} = \begin{pmatrix} 0 \\ 2 \end{pmatrix}
 ```
 Luego, aplicamos la función de activación ReLU:
 
@@ -56,7 +56,7 @@ a^1 = \text{ReLU}(z^1) = \begin{pmatrix} 0 \\ 2 \end{pmatrix}
 #### Cálculo de la salida de la red (capa de salida):
 
 ```math
-z^2 = W^2 \cdot a^1 = \begin{pmatrix} -1 & 1 \end{pmatrix} \cdot \begin{pmatrix} 0 \\ 2 \end{pmatrix} = 2
+z^2 = W^{~2} \cdot a^1 = \begin{pmatrix} -1 & 1 \end{pmatrix} \cdot \begin{pmatrix} 0 \\ 2 \end{pmatrix} = 2
 ```
 
 Dado que la función de activación en la capa de salida es lineal, tenemos:
@@ -81,22 +81,22 @@ a^2 = z^2 = 2
 \delta^2 = \text{Error} = -1
 ```
 
-El gradiente de los pesos de la capa de salida $W^2$ es:
+El gradiente de los pesos de la capa de salida $W^{~2}$ es:
 
 ```math
-\text{gradiente de } W^2 = a^1 \cdot \delta^{2} = \begin{pmatrix} 0 \\ 2 \end{pmatrix} \cdot (-1) = \begin{pmatrix} 0 \\ -2 \end{pmatrix}
+\text{gradiente de } W^{~2} = a^1 \cdot \delta^{2} = \begin{pmatrix} 0 \\ 2 \end{pmatrix} \cdot (-1) = \begin{pmatrix} 0 \\ -2 \end{pmatrix}
 ```
 
 #### Cálculo del gradiente en la capa oculta:
 
 ```math
-\delta^1 = (W^2 \cdot \delta^2) \odot f'(z^1)
+\delta^1 = (W^{~2} \cdot \delta^2) \odot f'(z^1)
 ```
 
 Primero:
 
 ```math
-W^2 \cdot \delta^2 = \begin{pmatrix} -1 \\ 1 \end{pmatrix} \cdot (-1) = \begin{pmatrix} 1 \\ -1 \end{pmatrix}
+W^{~2} \cdot \delta^2 = \begin{pmatrix} -1 \\ 1 \end{pmatrix} \cdot (-1) = \begin{pmatrix} 1 \\ -1 \end{pmatrix}
 ```
 
 Luego, multiplicamos por la derivada de ReLU (suponemos que la derivada en 0 es 0):
@@ -109,10 +109,10 @@ f'(z^1) = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
 \delta^1 = \begin{pmatrix} 1 \\ -1 \end{pmatrix} \odot \begin{pmatrix} 0 \\ 1 \end{pmatrix} = \begin{pmatrix} 0 \\ -1 \end{pmatrix}
 ```
 
-El gradiente de los pesos de la primera capa $W^1$ es:
+El gradiente de los pesos de la primera capa $W^{~1}$ es:
 
 ```math
-\text{gradiente de } W^1 = \delta^1 \cdot x^T = \begin{pmatrix} 0 \\ -1 \end{pmatrix} \cdot \begin{pmatrix} -1 & 0 & 2 \end{pmatrix} = \begin{pmatrix} 0 & 0 & 0 \\ 1 & 0 & -2 \end{pmatrix}
+\text{gradiente de } W^{~1} = \delta^1 \cdot x^T = \begin{pmatrix} 0 \\ -1 \end{pmatrix} \cdot \begin{pmatrix} -1 & 0 & 2 \end{pmatrix} = \begin{pmatrix} 0 & 0 & 0 \\ 1 & 0 & -2 \end{pmatrix}
 ```
 
 
