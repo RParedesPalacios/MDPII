@@ -54,9 +54,3 @@ Cuando usas k-NN, la estimación de $p(c | x)$ se aproxima dividiendo el número
 p(c | x) \approx \frac{K_c}{K}
 ```
 
-## 5. Resumen
-- El volumen de la hiperesfera $V_K(x)$ se ajusta automáticamente en función de la densidad local de los datos: si hay muchos puntos cerca de $x$, el volumen será pequeño; si hay pocos puntos, será grande.
-- El número de vecinos $K_c$ de la clase $c$ dentro de esa hiperesfera es proporcional a la densidad de probabilidad $p(x | c)$.
-- El cociente $rac{K_c}{K}$ da una estimación directa de la probabilidad a posteriori $p(c | x)$.
-
-De esta manera, el k-NN es una técnica no paramétrica que utiliza vecinos cercanos para estimar probabilidades a posteriori de manera intuitiva, basándose en la idea de que los puntos cercanos proporcionan información valiosa sobre las probabilidades de clase.
