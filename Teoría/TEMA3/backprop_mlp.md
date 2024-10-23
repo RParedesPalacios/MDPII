@@ -16,6 +16,7 @@ Un MLP consta de varias capas:
 
 La propagación hacia adelante implica calcular las salidas de cada capa aplicando una función de activación $f(x)$ a la combinación lineal de las salidas de la capa anterior.
 
+
 ### 2. Propagación hacia adelante (Forward Propagation)
 
 Para la capa $l$, la salida de las neuronas está dada por:
