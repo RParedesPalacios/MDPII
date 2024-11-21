@@ -12,7 +12,6 @@ labels = np.array([1, 1, -1, -1])
 # Definición del kernel polinómico
 
 def polynomial_kernel(x, y):
-
     return (np.dot(x, y) + 1) ** 2
 
 
@@ -22,9 +21,7 @@ def polynomial_kernel(x, y):
 kernel_matrix = np.zeros((4, 4))
 
 for i in range(4):
-
     for j in range(4):
-
         kernel_matrix[i, j] = polynomial_kernel(x[i], x[j])
 
 
@@ -106,7 +103,7 @@ decision_values_corrected = np.array(decision_values_corrected).reshape(xx.shape
 # Dibujar nuevamente las fronteras de decisión
 plt.figure(figsize=(8, 8))
 plt.contourf(xx, yy, decision_values_corrected, levels=0, cmap=ListedColormap(['#FFAAAA', '#AAAAFF']), alpha=0.8)
-plt.contour(xx, yy, decision_values_corrected, levels=[-1, 0, 1], colors=['blue', 'black', 'red'], linewidths=2, linestyles=['--', '-', '--'],labels="")
+plt.contour(xx, yy, decision_values_corrected, levels=[-1, 0, 1], colors=['blue', 'black', 'red'], linewidths=2, linestyles=['--', '-', '--'])
 
 # Dibujar los puntos de entrenamiento
 for i, sample in enumerate(x):

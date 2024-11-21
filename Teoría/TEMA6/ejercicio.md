@@ -75,7 +75,6 @@ n_samples = len(labels)
 
 # Definición del kernel polinómico
 def polynomial_kernel(x, y):
-
     return (np.dot(x, y) + 1) ** 2
 
 
@@ -127,7 +126,7 @@ Obtenemos los siguientes valores de $\alpha$:
 
 ## Fronteras de decisión
 
-![](fronteras.png)
+![](assets/fronteras.png)
 
 ## Clasifica las muestras de entrenamiento
 
