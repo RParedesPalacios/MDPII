@@ -144,7 +144,7 @@ donde $b$ (bias) se calcula como:
 
 ```math
 
-b = c_n - \sum_{m=1}^4 c_m \alpha_n K(x_n, x_m), ~~~~~~~~~~~~\text{para }\alpha_n>0
+b = c_n - \sum_{m=1}^4 c_m \alpha_m K(x_n, x_m), ~~~~~~~~~~~~\text{para }\alpha_n>0
 
 ```
 
