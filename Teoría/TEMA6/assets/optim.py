@@ -8,6 +8,7 @@ import numpy as np
 
 x = np.array([[1, 1], [0, 0], [0, 1], [1, 0]])
 labels = np.array([1, 1, -1, -1])
+C=3 # Parámetro de regularización
 
 # Definición del kernel polinómico
 
@@ -17,7 +18,6 @@ def polynomial_kernel(x, y):
 
 
 # Construcción de la matriz kernel
-
 kernel_matrix = np.zeros((4, 4))
 
 for i in range(4):
@@ -75,6 +75,7 @@ support_vector_alphas = optimal_alphas[support_vectors_indices]
 # Calcular el sesgo (bias): b = y_i - sum(alpha_j * y_j * K(x_j, x_i))
 idx=1 # por ejemplo con x_1 
 bias = labels[idx] - sum(optimal_alphas[j] * labels[j] * polynomial_kernel(x[j], x[idx]) for j in range(n_samples))
+print(bias)
 
 # Recalcular f(x) incluyendo el sesgo
 def decision_function(sample):
@@ -82,6 +83,7 @@ def decision_function(sample):
     for i in range(n_samples):
         decision_value += optimal_alphas[i] * labels[i] * polynomial_kernel(x[i], sample)
     return decision_value + bias
+
 
 
 # Generar una cuadrícula para visualizar las fronteras de decisión
@@ -102,7 +104,7 @@ decision_values_corrected = np.array(decision_values_corrected).reshape(xx.shape
 
 # Dibujar nuevamente las fronteras de decisión
 plt.figure(figsize=(8, 8))
-plt.contourf(xx, yy, decision_values_corrected, levels=0, cmap=ListedColormap(['#FFAAAA', '#AAAAFF']), alpha=0.8)
+plt.contourf(xx, yy, decision_values_corrected, levels=0, cmap=ListedColormap(['#AAAAFF','#FFAAAA']), alpha=0.8)
 plt.contour(xx, yy, decision_values_corrected, levels=[-1, 0, 1], colors=['blue', 'black', 'red'], linewidths=2, linestyles=['--', '-', '--'])
 
 # Dibujar los puntos de entrenamiento
