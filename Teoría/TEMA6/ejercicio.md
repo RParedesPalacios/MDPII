@@ -62,7 +62,7 @@ K =
 
 ## Resuelvemos el problema de optimización para este conjunto
 
-Resolvemos el problema de optimiación con márgenes duros (no hay C):
+Resolvemos el problema de optimiación con márgenes duros (no hay C): [código](assets/optim.py)
 
 ```python
 from scipy.optimize import minimize
