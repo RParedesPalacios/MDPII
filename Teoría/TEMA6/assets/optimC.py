@@ -8,6 +8,7 @@ import numpy as np
 
 x = np.array([[1, 1], [0, 0], [0, 1], [1, 0]])
 labels = np.array([1, 1, -1, -1])
+C=3 # Parámetro de regularización
 
 # Definición del kernel polinómico
 
@@ -37,7 +38,7 @@ def constraint_eq(alphas):
     return np.dot(alphas, labels)
 
 # Restricción: \alpha_i >= 0
-bounds = [(0, None) for _ in range(n_samples)]
+bounds = [(0, C) for _ in range(n_samples)]
 
 # Punto inicial para la optimización
 initial_alphas = np.zeros(n_samples)
@@ -71,10 +72,12 @@ support_vectors = x[support_vectors_indices]
 support_vector_labels = labels[support_vectors_indices]
 support_vector_alphas = optimal_alphas[support_vectors_indices]
 
-# Calcular el sesgo (bias): b = y_i - sum(alpha_j * y_j * K(x_j, x_i))
-idx=0 # por ejemplo con x_1 
-bias = labels[idx] - sum(optimal_alphas[j] * labels[j] * polynomial_kernel(x[j], x[idx]) for j in range(n_samples))
-print(bias)
+# Calcular el sesgo (bias): b = y_i - sum(alpha_j * y_j * K(x_j, x_i)) Para vector de soporte NO LIGADO alfa < C
+for idx in support_vectors_indices:
+    if optimal_alphas[idx] < C:
+        bias = labels[idx] - sum(optimal_alphas[j] * labels[j] * polynomial_kernel(x[j], x[idx]) for j in range(n_samples))
+        print(bias)
+
 
 # Recalcular f(x) incluyendo el sesgo
 def decision_function(sample):

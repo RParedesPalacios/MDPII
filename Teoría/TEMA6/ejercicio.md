@@ -124,6 +124,8 @@ Obtenemos los siguientes valores de $\alpha$:
 
 ```
 
+**Nota** También se podría resolver con márgenes blandos ver [Optimización márgenes blandos](assets/optimC.py)
+
 ## Fronteras de decisión
 
 ![](assets/fronteras.png)
