@@ -7,7 +7,7 @@ MLP con una capa oculta, la función de activación de la capa oculta es ReLU, l
 La función de coste es la divergencia al cuadrado:
 
 ```math
-J(\mathbf{W}) = \frac{1}{2} \| \hat{\mathbf{y}} - \mathbf{y} \|^{(2)}
+J(\mathbf{W}) = \frac{1}{2} \| \hat{\mathbf{y}} - \mathbf{y} \|^{2}
 ```
 
 
@@ -68,7 +68,7 @@ Dado que la función de activación en la capa de salida es lineal, tenemos:
 #### Error:
 
 ```math
-\text{Error} = \mathbf{a}^{(2)} - y = (2) - (3) = (-1)
+\text{Error} = \frac{1}{2} || \mathbf{a}^{(2)} - y ||^2 = \frac{1}{2} || 2 - 3 ||^2 = \frac{1}{2}
 ```
 
 ---
@@ -84,24 +84,24 @@ Denominamos $\delta^{(L)}=\frac{\partial J}{\partial \mathbf{z}^{(L)}}$
 Recordemos la regla de la cadena:
 
 ```math
-\delta^{(2)}=\frac{\partial J}{\partial \mathbf{z}^{2}}=\frac{\partial J}{\partial \mathbf{a}^{2}}\frac{\partial \mathbf{a}^{2}}{\partial \mathbf{z}^{2}}=\frac{\partial J}{\partial y}\frac{\partial y}{\partial \mathbf{z}^{2}}
+\delta^{(2)}=\frac{\partial J}{\partial \mathbf{z}^{2}}=\frac{\partial J}{\partial \mathbf{a}^{2}}\frac{\partial \mathbf{a}^{2}}{\partial \mathbf{z}^{2}}=\frac{\partial J}{\partial \hat{y}}\frac{\partial \hat{y}}{\partial \mathbf{z}^{2}}
 ```
 Dada que la función de salida es lineal
 
 ```math
-\frac{\partial y}{\partial \mathbf{z}^{2}}=1
+\frac{\partial \hat{y}}{\partial \mathbf{z}^{2}}=1
 ```
 
 y
 
 ```math
-\frac{\partial J}{\partial y}=(y-\hat{y})
+\frac{\partial J}{\partial \hat{y}}=(\hat{y} - y)
 ```
 
 nos queda:
 
 ```math
-\delta^{(2)} = (y-\hat{y})=(-1)
+\delta^{(2)} = (\hat{y} - y)=(-1)
 ```
 
 El gradiente de los pesos de la capa de salida $W^{~(2)}$ es:
